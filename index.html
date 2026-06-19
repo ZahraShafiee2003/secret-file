@@ -7,28 +7,31 @@
       background: black;
       color: #00ff00;
       font-family: monospace;
-      padding: 20px;
       text-align: center;
-    }
-    .box {
-      border: 1px solid #00ff00;
       padding: 20px;
-      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
-<h2>🔒 ACCESS GRANTED</h2>
-<p>loading user profile...</p>
+<h2>🔒 SYSTEM ACCESS GRANTED</h2>
 
-<div class="box">
-  <p>NAME: Ali</p>
-  <p>MOOD: Overthinking</p>
-  <p>STATUS: Online but mentally offline</p>
-  <p>OVERTHINK LEVEL: 87%</p>
-</div>
+<p id="output"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+
+document.getElementById("output").innerHTML =
+`
+USER: ${name || "UNKNOWN"}
+
+STATUS: ONLINE
+
+CLASSIFICATION: UNIQUE HUMAN FILE
+`;
+</script>
 
 </body>
 </html>
