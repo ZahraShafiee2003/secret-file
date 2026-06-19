@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CLASSIFIED FILE</title>
-  <style>
-    body {
-      background: black;
-      color: #00ff00;
-      font-family: monospace;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <title>CLASSIFIED</title>
 </head>
 
-<body>
+<body style="background:black;color:lime;text-align:center;font-family:monospace;padding:20px;">
 
-<h2>🔒 SYSTEM ACCESS GRANTED</h2>
+<h2>ACCESS GRANTED</h2>
 
-<p id="output"></p>
+<p id="text"></p>
 
 <script>
 const params = new URLSearchParams(window.location.search);
 const name = params.get("name");
 
-document.getElementById("output").innerHTML =
-`
-USER: ${name || "Ali"}
-
-STATUS: Online but mentally offline
-
-CLASSIFICATION: UNIQUE HUMAN FILE
-`;
+document.getElementById("text").innerHTML =
+"USER: " + (name || "UNKNOWN");
 </script>
 
 </body>
