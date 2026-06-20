@@ -184,48 +184,35 @@ document.getElementById(
 ).innerHTML=`
 
 ACCESS GRANTED...
-
 ----------------------------
 
-USER:
-${user.toUpperCase()}
+USER: ${user.toUpperCase()}
 
-CURRENT STATUS:
+CURRENT STATUS: 
 ${data.mood}
 
-STABILITY:
-${data.stability}
+STABILITY: ${data.stability}
 
-SOCIAL BATTERY:
-${data.battery}
+SOCIAL BATTERY: ${data.battery}
 
-CHAOS LEVEL:
-${data.chaos}
+CHAOS LEVEL: ${data.chaos}
 
 ----------------------------
 
 SYSTEM ANALYSIS:
-
 • ${data.bugs.join("<br>• ")}
-
-<br>
 
 ----------------------------
 
 WARNING:
-
 ${data.warning}
 
-<br>
-
 CLASSIFICATION:
-
 ${data.classification}
 
 ----------------------------
 
 > end of file...
-
 `;
 
 </script>
